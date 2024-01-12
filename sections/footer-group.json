@@ -82,22 +82,29 @@
         "link-list-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Footer links",
+            "heading": "Popular Links",
             "menu": "popular-links"
           }
         },
         "link-list-2": {
           "type": "link_list",
           "settings": {
-            "heading": "Footer links",
+            "heading": "Shop Category",
             "menu": "shop-category"
           }
         },
         "link_list_fEhWwQ": {
           "type": "link_list",
           "settings": {
-            "heading": "Footer links",
+            "heading": "Customer Service",
             "menu": "customer-service"
+          }
+        },
+        "link_list_tUainj": {
+          "type": "link_list",
+          "settings": {
+            "heading": "My Account",
+            "menu": "my-account"
           }
         }
       },
@@ -105,7 +112,8 @@
         "text",
         "link-list-1",
         "link-list-2",
-        "link_list_fEhWwQ"
+        "link_list_fEhWwQ",
+        "link_list_tUainj"
       ],
       "settings": {
         "show_back_to_top": true,
