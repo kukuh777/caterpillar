@@ -69,9 +69,10 @@
         "text": {
           "type": "text",
           "settings": {
-            "image_width": 150,
-            "heading": "Talk about your store",
-            "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
+            "image": "shopify:\/\/shop_images\/footer-logo.png",
+            "image_width": 50,
+            "heading": "",
+            "text": "<p>Stronger together, their innovative mindsets built equipment that moved the earth and transformed the modern skyline. Almost a century later, the brand continues to prove the impossible is possible.<\/p>",
             "button_label": "",
             "button_link": "",
             "enable_follow_on_shop": false,
@@ -123,11 +124,12 @@
         "enable_language_selector": true,
         "secondary_menu": "",
         "bg_color": "#f4f4f4",
-        "desc_color": "#4B5563",
+        "desc_color": "#4b5563",
+        "icon_color": "#6B7280",
         "title_color": "#111827",
         "text_color": "#6b7280",
-        "copyright_bg_color": "#F9FAFB",
-        "copyright_color": "#9CA3AF"
+        "copyright_bg_color": "#f9fafb",
+        "copyright_color": "#9ca3af"
       }
     }
   },
