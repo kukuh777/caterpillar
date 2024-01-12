@@ -75,7 +75,7 @@
             "button_label": "",
             "button_link": "",
             "enable_follow_on_shop": false,
-            "show_social": false,
+            "show_social": true,
             "text_align": "text-start"
           }
         },
@@ -123,7 +123,11 @@
         "enable_language_selector": true,
         "secondary_menu": "",
         "bg_color": "#f4f4f4",
-        "text_color": "#6b7280"
+        "desc_color": "#4B5563",
+        "title_color": "#111827",
+        "text_color": "#6b7280",
+        "copyright_bg_color": "#F9FAFB",
+        "copyright_color": "#9CA3AF"
       }
     }
   },
