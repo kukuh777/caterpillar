@@ -418,6 +418,10 @@
     "preorder_label_text_color": "#000000",
     "custom_label_bg_color": "#81f4e1",
     "custom_label_text_color": "#070707",
+    "social_facebook_url": "https:\/\/facebook.com\/shopify",
+    "social_youtube_url": "https:\/\/youtube.com\/user\/shopify",
+    "social_instagram_url": "https:\/\/instagram.com\/shopify",
+    "social_twitter_url": "https:\/\/twitter.com\/shopify",
     "search_show_pages": true,
     "search_show_articles": true,
     "predictive_search_show_collections": true,
@@ -446,6 +450,9 @@
     "badge_card_position": "top-0 right-0 text-right",
     "badge_product_page_position": "top-0 right-0 text-right",
     "new_badge_bg_color": "#cd4c1d",
-    "prod_color_selector_style": "swatches"
+    "prod_color_selector_style": "swatches",
+    "content_for_index": [
+
+    ]
   }
 }
