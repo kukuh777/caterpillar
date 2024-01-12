@@ -49,6 +49,10 @@
   margin-top: 1.5em;
 }
 
+.footer-block__social {
+  color: rgb(var(--icon-color));
+}
+
 .footer-block__btns svg {
   width: 20px;
   height: 20px;
@@ -186,7 +190,6 @@
   }
   .footer-block__social {
     margin-bottom: -6px;
-    color: rgb(var(--icon-color));
   }
   .footer-col--not-collapsed + .footer-col--not-collapsed > .footer-block {
     padding-top: var(--row-gap);
