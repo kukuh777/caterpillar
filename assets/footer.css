@@ -233,7 +233,7 @@
   }
   .footer-menu .disclosure__title {
     margin-bottom: 1em;
-
+    text-transform: uppercase;
     color: rgb(var(--heading-color));
   }
   .footer-menu .disclosure__panel {
