@@ -70,7 +70,7 @@
           "type": "text",
           "settings": {
             "image": "shopify:\/\/shop_images\/footer-logo.png",
-            "image_width": 50,
+            "image_width": 54,
             "heading": "",
             "text": "<p>Stronger together, their innovative mindsets built equipment that moved the earth and transformed the modern skyline. Almost a century later, the brand continues to prove the impossible is possible.<\/p>",
             "button_label": "",
@@ -125,7 +125,7 @@
         "secondary_menu": "",
         "bg_color": "#f4f4f4",
         "desc_color": "#4b5563",
-        "icon_color": "#6B7280",
+        "icon_color": "#6b7280",
         "title_color": "#111827",
         "text_color": "#6b7280",
         "copyright_bg_color": "#f9fafb",
