@@ -132,7 +132,7 @@
       {%- if settings.section_gap == '32' -%}
         --heading-gap: calc(6 * var(--space-unit));
       {%- endif -%}
-      --grid-column-gap: 20px;
+      --grid-column-gap: 10px;
 
       {%- assign button_bg_color_hover = settings.button_bg_color | color_mix: settings.button_text_color, 85 | color_lighten: 3 -%}
       --btn-bg-color: {{ settings.button_bg_color.rgb }};
