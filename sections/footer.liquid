@@ -7,8 +7,12 @@
 {%- style -%}
   .footer {
     --bg-color: {{ section.settings.bg_color.rgba }};
-    --heading-color: {{ section.settings.text_color.rgb }};
+    --heading-color: {{ section.settings.heading_color.rgb }};
     --text-color: {{ section.settings.text_color.rgb }};
+    --desc-color: {{ section.settings.desc_color.rgb }};
+    --icon-color: {{ section.settings.text_color.rgb }};
+    --bg-copyright-color: {{ section.settings.copyright_bg_color.rgb }};
+    --copyright-color: {{ section.settings.copyright_color.rgb }};
   }
 {%- endstyle -%}
 
@@ -303,14 +307,8 @@
     },
     {
       "type": "color",
-      "id": "icon_color",
-      "label": "Icon color",
-      "default": "#6B7280"
-    },
-    {
-      "type": "color",
-      "id": "title_color",
-      "label": "Title color",
+      "id": "heading_color",
+      "label": "Heading color",
       "default": "#111827"
     },
     {
