@@ -186,6 +186,7 @@
   }
   .footer-block__social {
     margin-bottom: -6px;
+    color: rgb(var(--icon-color));
   }
   .footer-col--not-collapsed + .footer-col--not-collapsed > .footer-block {
     padding-top: var(--row-gap);
