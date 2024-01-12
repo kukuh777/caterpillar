@@ -233,6 +233,7 @@
   }
   .footer-menu .disclosure__title {
     margin-bottom: 1em;
+    color: rgb(var(--heading-color));
   }
   .footer-menu .disclosure__panel {
     overflow: initial;
