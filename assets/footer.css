@@ -1,5 +1,6 @@
 .footer {
   padding: calc(2 * var(--space-unit)) 0 calc(10 * var(--space-unit));
+  padding-bottom: 0;
 }
 .back-to-top + .footer {
   border-top: 0;
