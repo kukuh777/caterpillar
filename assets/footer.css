@@ -292,7 +292,7 @@
     justify-content: center;
   }
   .footer-menu summary > div {
-    justify-content: center;
+    display: block;
   }
 }
 @media (min-width: 1024px) {
