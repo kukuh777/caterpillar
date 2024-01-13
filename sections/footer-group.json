@@ -119,14 +119,14 @@
       "settings": {
         "show_back_to_top": true,
         "show_payment_icons": true,
-        "show_powered_by": true,
+        "show_copyright": "custom",
+        "custom_copyright": "<p>CAT Footwear All Rights Reserved<\/p>",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "secondary_menu": "",
         "bg_color": "#f4f4f4",
         "desc_color": "#4b5563",
-        "icon_color": "#6b7280",
-        "title_color": "#111827",
+        "heading_color": "#111827",
         "text_color": "#6b7280",
         "copyright_bg_color": "#f9fafb",
         "copyright_color": "#9ca3af"
