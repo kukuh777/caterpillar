@@ -213,7 +213,7 @@
 
 {% javascript %}
   customElements.whenDefined('details-disclosure').then(() => {
-        console.log(theme);
+        console.log(window.matchMedia(theme.mediaQueries.md).matches);
     class FooterMenu extends DetailsDisclosure {
       constructor() {
         super();
