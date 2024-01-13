@@ -283,6 +283,10 @@
   .footer-col--links {
     flex: 0 0 25%;
   }
+  .footer-col--links *,
+  .footer-col--text:not(.footer-col--text-full-width) * {
+    text-align: center !important;
+  }
 }
 @media (min-width: 1024px) {
   .footer__main {
