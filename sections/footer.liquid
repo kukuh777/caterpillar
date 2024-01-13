@@ -126,10 +126,9 @@
 
             {%- when 'link_list' -%}
               {%- if block.settings.menu != blank and block.settings.heading != blank -%}
-                {{ block.settings.default_collapsible }}
                 <div class="footer-col footer-col--links footer-col--collapsed" {{ block.shopify_attributes }}{% if settings.animations_enabled != "disabled" %} data-cc-animate data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s"{% endif %}>
                   <footer-menu>
-                    <details class="footer-menu disclosure{% if is_first_disclosure %} footer-menu--first{% endif %}" {{ block.settings.menu }}>
+                    <details class="footer-menu disclosure{% if is_first_disclosure %} footer-menu--first{% endif %}" open>
                       <summary tabindex="-1">
                         <div class="flex justify-between items-center">
                           <h2 class="disclosure__title font-body font-bold text-h6 regular-text">
