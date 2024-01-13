@@ -227,16 +227,15 @@
 
         this.disclosure.open = isLargeScreen || isConfirmNewsletter;
 
-        if (isLargeScreen) {
-          this.toggle.setAttribute('tabindex', '-1');
-        } else {
-          this.toggle.removeAttribute('tabindex');
-        }
+        // if (isLargeScreen) {
+        //   this.toggle.setAttribute('tabindex', '-1');
+        // } else {
+        //   this.toggle.removeAttribute('tabindex');
+        // }
       }
     }
 
     customElements.define('footer-menu', FooterMenu);
-    console.log(footerMenu)
   });
 {% endjavascript %}
 
