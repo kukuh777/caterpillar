@@ -130,6 +130,7 @@
 
 .footer__base {
   --row-gap: calc(6 * var(--space-unit));
+  padding: 16px 0;
 }
 
 .footer-sublinks {
