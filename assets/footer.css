@@ -132,6 +132,9 @@
   --row-gap: calc(6 * var(--space-unit));
   padding: 16px 0;
 }
+.footer__base span {
+  color: rgb(var(--copyright-color));
+}
 
 .footer-sublinks {
   display: flex;
