@@ -186,10 +186,11 @@
 
     <div class="footer__base grid grid-cols-1 lg:grid-cols-2 gap-x-theme gap-y-6 text-xs"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
       <div>
-        <span>&copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}.</span>
-        {% if section.settings.show_powered_by %}
-
+        {% if section.settings.show_copyright == "default" %}
+          <span>&copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}.</span>
           <span>{{ powered_by_link }}</span>
+        {% else %}
+          <span>&copy; {{ "now" | date: "%Y" }} {{ section.settings.custom_copyright }}</span>
         {% endif %}
       </div>
       {%- if section.settings.secondary_menu != blank -%}
@@ -253,10 +254,19 @@
       "default": true
     },
     {
-      "type": "checkbox",
-      "id": "show_powered_by",
-      "label": "Show 'Powered by Custom'",
-      "default": true
+      "type": "select",
+      "id": "show_copyright",
+      "label": "Copyright Content",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "custom",
+          "label": "Custom"
+        }
+      ]
     },
     {
       "type": "richtext",
