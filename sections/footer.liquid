@@ -185,7 +185,7 @@
     {% endif %} {% endcomment %}
 
   </div>
-  <div class="footer__base flex gap-x-theme gap-y-6 text-s {{ section.settings.copyright_position }}"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
+  <div class="footer__base bg-theme-bg-copyright flex gap-x-theme gap-y-6 text-s {{ section.settings.copyright_position }}"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
     <div>
       {% if section.settings.show_copyright == "default" %}
         <span>&copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}.</span>
