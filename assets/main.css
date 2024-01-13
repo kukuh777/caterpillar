@@ -958,6 +958,9 @@ address {
 .bg-theme-bg{
   background-color: rgba(var(--bg-color));
 }
+.bg-theme-bg-copyright{
+  background-color: rgba(var(--bg-copyright-color));
+}
 .bg-success-bg{
   background-color: rgb(var(--success-bg-color));
 }
