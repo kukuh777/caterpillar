@@ -287,6 +287,13 @@
   .footer-col--text:not(.footer-col--text-full-width) * {
     text-align: center !important;
   }
+  .footer-menu summary {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-menu summary > div {
+    justify-content: center;
+  }
 }
 @media (min-width: 1024px) {
   .footer__main {
