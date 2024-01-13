@@ -120,6 +120,7 @@
         "show_back_to_top": true,
         "show_payment_icons": true,
         "show_copyright": "custom",
+        "copyright_position": "center",
         "custom_copyright": "CAT Footwear All Rights Reserved",
         "enable_country_selector": true,
         "enable_language_selector": true,
