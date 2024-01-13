@@ -184,7 +184,7 @@
     <hr class="footer__hr"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
     {% endif %}
 
-    <div class="footer__base grid grid-cols-1 lg:grid-cols-2 gap-x-theme gap-y-6 text-xs"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
+    <div class="footer__base flex gap-x-theme gap-y-6 text-s"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
       <div>
         {% if section.settings.show_copyright == "default" %}
           <span>&copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}.</span>
@@ -265,6 +265,25 @@
         {
           "value": "custom",
           "label": "Custom"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "copyright_position",
+      "label": "Copyright Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
         }
       ]
     },
