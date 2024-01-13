@@ -219,6 +219,7 @@
   }
   .footer {
     padding: calc(48 * var(--fluid-1-5)) 0 calc(16 * var(--space-unit));
+    padding-bottom: 0;
   }
   .footer-block__btns svg {
     width: 22px;
