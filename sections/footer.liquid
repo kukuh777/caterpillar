@@ -188,6 +188,7 @@
       <div>
         <span>&copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}.</span>
         {% if section.settings.show_powered_by %}
+
           <span>{{ powered_by_link }}</span>
         {% endif %}
       </div>
@@ -254,8 +255,13 @@
     {
       "type": "checkbox",
       "id": "show_powered_by",
-      "label": "Show 'Powered by Shopify'",
+      "label": "Show 'Powered by Custom'",
       "default": true
+    },
+    {
+      "type": "richtext",
+      "id": "custom_copyright",
+      "label": "Copyright Content"
     },
     {
       "type": "header",
