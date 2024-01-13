@@ -67,6 +67,9 @@
                       endif
                     -%}
                     <div class="footer-block__btns footer-block__social">
+                      <div class="footer-block__social-title">
+                        <span>{{ sections.footer.follow_us }}</span>
+                      </div>
                       {% render 'social-media', icon: settings.social_custom_icon, icon_height: 24, class: class %}
                     </div>
                   {%- endif -%}
