@@ -213,6 +213,7 @@
 
 {% javascript %}
   customElements.whenDefined('details-disclosure').then(() => {
+        console.log(theme.mediaQueries);
     class FooterMenu extends DetailsDisclosure {
       constructor() {
         super();
@@ -222,7 +223,6 @@
 
       reset() {
         const isLargeScreen = window.matchMedia(theme.mediaQueries.md).matches;
-        console.log(theme.mediaQueries)
         const isConfirmNewsletter = !isLargeScreen &&
           (window.location.hash === "#footer-signup_form" && this.querySelector('#footer-signup_form') !== null);
 
