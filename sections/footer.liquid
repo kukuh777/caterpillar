@@ -225,13 +225,13 @@
         const isConfirmNewsletter = !isLargeScreen &&
           (window.location.hash === "#footer-signup_form" && this.querySelector('#footer-signup_form') !== null);
 
-        this.disclosure.open = isLargeScreen || isConfirmNewsletter;
+        // this.disclosure.open = isLargeScreen || isConfirmNewsletter;
 
-        // if (isLargeScreen) {
-        //   this.toggle.setAttribute('tabindex', '-1');
-        // } else {
-        //   this.toggle.removeAttribute('tabindex');
-        // }
+        if (isLargeScreen) {
+          this.toggle.setAttribute('tabindex', '-1');
+        } else {
+          this.toggle.removeAttribute('tabindex');
+        }
       }
     }
 
