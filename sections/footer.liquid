@@ -221,7 +221,8 @@
       }
 
       reset() {
-        console.log(this.disclosure.open)
+        console.log(this.disclosure.open);
+        console.log('test')
         const isLargeScreen = window.matchMedia(theme.mediaQueries.md).matches;
         const isConfirmNewsletter = !isLargeScreen &&
           (window.location.hash === "#footer-signup_form" && this.querySelector('#footer-signup_form') !== null);
