@@ -213,7 +213,6 @@
 
 {% javascript %}
   customElements.whenDefined('details-disclosure').then(() => {
-        console.log(window.matchMedia(theme.mediaQueries.md).matches);
     class FooterMenu extends DetailsDisclosure {
       constructor() {
         super();
@@ -222,11 +221,12 @@
       }
 
       reset() {
+        console.log(this.disclosure.open)
         const isLargeScreen = window.matchMedia(theme.mediaQueries.md).matches;
         const isConfirmNewsletter = !isLargeScreen &&
           (window.location.hash === "#footer-signup_form" && this.querySelector('#footer-signup_form') !== null);
 
-        this.disclosure.open = isLargeScreen || isConfirmNewsletter || !isLargeScreen;
+        // this.disclosure.open = isLargeScreen || isConfirmNewsletter;
 
         if (isLargeScreen) {
           this.toggle.setAttribute('tabindex', '-1');
