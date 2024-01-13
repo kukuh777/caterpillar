@@ -269,6 +269,10 @@
   .footer-menu__links {
     padding-bottom: calc(2 * var(--space-unit));
   }
+  .footer-block .disclosure__title {
+    text-transform: uppercase;
+    color: rgb(var(--heading-color));
+  }
   .footer-col--links {
     flex: 0 1 auto;
     min-width: 130px;
