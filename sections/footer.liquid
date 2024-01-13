@@ -221,8 +221,7 @@
       }
 
       reset() {
-        console.log(this.disclosure.open);
-        console.log('test')
+        console.log(this.disclosure.open)
         const isLargeScreen = window.matchMedia(theme.mediaQueries.md).matches;
         const isConfirmNewsletter = !isLargeScreen &&
           (window.location.hash === "#footer-signup_form" && this.querySelector('#footer-signup_form') !== null);
@@ -231,6 +230,7 @@
 
         if (isLargeScreen) {
           this.toggle.setAttribute('tabindex', '-1');
+          this.disclosure.open = isLargeScreen || isConfirmNewsletter;
         } else {
           this.toggle.removeAttribute('tabindex');
         }
