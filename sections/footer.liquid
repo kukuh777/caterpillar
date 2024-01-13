@@ -180,31 +180,31 @@
       </div>
     {%- endif -%}
 
-    {%- if section.blocks.size > 0 or section.settings.enable_country_selector or section.settings.enable_language_selector or section.settings.show_payment_icons -%}
+    {% comment %} {%- if section.blocks.size > 0 or section.settings.enable_country_selector or section.settings.enable_language_selector or section.settings.show_payment_icons -%}
     <hr class="footer__hr"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
-    {% endif %}
+    {% endif %} {% endcomment %}
 
-    <div class="footer__base flex gap-x-theme gap-y-6 text-s {{ section.settings.copyright_position }}"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
-      <div>
-        {% if section.settings.show_copyright == "default" %}
-          <span>&copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}.</span>
-          <span>{{ powered_by_link }}</span>
-        {% else %}
-          <span>&copy; {{ "now" | date: "%Y" }} {{ section.settings.custom_copyright }}</span>
-        {% endif %}
-      </div>
-      {%- if section.settings.secondary_menu != blank -%}
-        <div>
-          <ul class="footer-sublinks flex flex-wrap gap-x-theme" role="list">
-            {% for link in section.settings.secondary_menu.links %}
-              <li class="footer-sublinks__item">
-                <a href="{{ link.url }}">{{ link.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      {%- endif -%}
+  </div>
+  <div class="footer__base flex gap-x-theme gap-y-6 text-s {{ section.settings.copyright_position }}"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
+    <div>
+      {% if section.settings.show_copyright == "default" %}
+        <span>&copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}.</span>
+        <span>{{ powered_by_link }}</span>
+      {% else %}
+        <span>&copy; {{ "now" | date: "%Y" }} {{ section.settings.custom_copyright }}</span>
+      {% endif %}
     </div>
+    {%- if section.settings.secondary_menu != blank -%}
+      <div>
+        <ul class="footer-sublinks flex flex-wrap gap-x-theme" role="list">
+          {% for link in section.settings.secondary_menu.links %}
+            <li class="footer-sublinks__item">
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {%- endif -%}
   </div>
 </footer>
 
