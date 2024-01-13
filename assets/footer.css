@@ -76,6 +76,7 @@
 }
 .footer-menu > summary {
   cursor: default;
+  padding: calc(4 * var(--space-unit)) 0;
 }
 
 .footer-menu__links {
