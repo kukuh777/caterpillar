@@ -184,7 +184,7 @@
     <hr class="footer__hr"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
     {% endif %}
 
-    <div class="footer__base flex gap-x-theme gap-y-6 text-s"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
+    <div class="footer__base flex gap-x-theme gap-y-6 text-s {{ section.settings.copyright_position }}"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
       <div>
         {% if section.settings.show_copyright == "default" %}
           <span>&copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: routes.root_url }}.</span>
@@ -274,15 +274,15 @@
       "label": "Copyright Position",
       "options": [
         {
-          "value": "left",
+          "value": "justify-start",
           "label": "Left"
         },
         {
-          "value": "center",
+          "value": "justify-center",
           "label": "Center"
         },
         {
-          "value": "right",
+          "value": "justify-end",
           "label": "Right"
         }
       ]
