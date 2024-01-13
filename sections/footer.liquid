@@ -19,7 +19,7 @@
 {%- if section.settings.show_back_to_top -%}
   <a href="#" class="back-to-top text-sm block border-top font-bold text-center text-current p-6 border-bottom"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>{{ 'sections.footer.back_to_top' | t }}</a>
 {%- endif -%}
-<footer class="footer bg-theme-bg text-theme-text">
+<footer class="footer bg-theme-bg-footer text-theme-text">
   <div class="container">
     {%- if section.blocks.size > 0 -%}
       <div class="footer__main md:flex md:flex-wrap mb-10 md:mb-6">
@@ -332,7 +332,7 @@
       "type": "color",
       "id": "bg_color",
       "label": "Background color",
-      "default": "#ffffff"
+      "default": "#FFFFFF"
     },
     {
       "type": "color",
