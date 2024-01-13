@@ -294,7 +294,7 @@
   .footer-menu summary > div {
     display: block;
   }
-  .footer-menu summary > div span {
+  .footer-menu summary span {
     display: none;
   }
 }
