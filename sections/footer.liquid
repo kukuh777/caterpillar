@@ -226,7 +226,7 @@
         const isConfirmNewsletter = !isLargeScreen &&
           (window.location.hash === "#footer-signup_form" && this.querySelector('#footer-signup_form') !== null);
 
-        this.disclosure.open = isLargeScreen || isConfirmNewsletter;
+        this.disclosure.open = isLargeScreen || isConfirmNewsletter || !isLargeScreen;
 
         if (isLargeScreen) {
           this.toggle.setAttribute('tabindex', '-1');
