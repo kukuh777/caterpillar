@@ -934,6 +934,9 @@ address {
 .gap-y-12{
   row-gap: calc(12 * var(--space-unit));
 }
+.gap-x-1{
+  column-gap: calc(1 * var(--space-unit));
+}
 .gap-x-6{
   column-gap: calc(6 * var(--space-unit));
 }
