@@ -1872,8 +1872,8 @@ select {
 }
 .input-with-button > .input {
   flex: 1 1 auto;
-  margin-inline-start: 3px;
-  margin-inline-end: calc((var(--input-border-radius, 0px) + var(--btn-border-radius, 0px)) * -1);
+  /* margin-inline-start: 3px;
+  margin-inline-end: calc((var(--input-border-radius, 0px) + var(--btn-border-radius, 0px)) * -1); */
   padding-inline-end: 0;
   border: 0;
   /* background-color: transparent; */
