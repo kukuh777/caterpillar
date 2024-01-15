@@ -231,7 +231,7 @@ mark {
   width: 100%;
   max-width: calc(var(--page-width, 1320px) + var(--gutter) * 2);
   margin: 0 auto;
-  padding: 0 var(--gutter);
+  /* padding: 0 var(--gutter); */
 }
 
 .page-width {
@@ -3073,6 +3073,7 @@ details-disclosure + details-disclosure .disclosure--row {
     width: 100%;
     background-color: rgb(var(--nav-bg-color));
     color: rgb(var(--nav-text-color));
+    padding: 0 var(--gutter);
   }
   .main-menu .localization {
     display: none;
@@ -4257,6 +4258,7 @@ label[data-swatch]::before {
 
 .header__logo {
   flex: 1;
+  padding-left: var(--gutter);
 }
 
 .logo__h1 {
@@ -4270,6 +4272,7 @@ label[data-swatch]::before {
 .header__icons {
   flex: 0 0 auto;
   margin-inline-end: -10px;
+  padding-right: var(--gutter);
 }
 
 .header__icon {
