@@ -158,7 +158,7 @@ async function getConfig() {
 }
 
 async function createCart(data) {
-  alert(${item.variant_id});
+  console.log('sadas')
     const query = `mutation createCart($input: CreateCartInput) {
     createCart(input: $input) {
       id
