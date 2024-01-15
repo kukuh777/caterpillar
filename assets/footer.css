@@ -67,6 +67,10 @@
   color: rgb(var(--newsletter-color));
 }
 
+.footer-col--newsletter p {
+  color: rgb(var(--newsletter-color));
+}
+
 .footer-col--newsletter span {
   color: rgb(var(--newsletter-secondary-color));
 }
