@@ -676,44 +676,7 @@
     {%- endif -%}
   </header>
 </store-header>
-<!-- custom code from scv2 -->
-        <script>
-          const varCustomerId = '{{ customer.id }}';
-          const customerId = (varCustomerId && varCustomerId !== '') ? `gid://shopify/Customer/${varCustomerId}`: null;
-          const customerOrders = [];
-        
-          {%- for order in customer.orders -%}
-          customerOrders.push({
-            id: '{{ order.order_number  }}',
-            fulfillmentStatus: '{{ order.fulfillment_status }}',
-            fulfillmentStatusLabel: '{{ order.financial_status_label }}'
-          });
-          {%- endfor -%}
-        
-          window.scvData = {
-            currency: '{{ currency.iso_code }}' || "IDR",
-            customerEmail: '{{ customer.email }}',
-            customerId,
-            customerOrders,
-            pK: 'TXAjwm8k53PJG9NacLbyZavvQB2qBh43',
-            scv2Key: 'eyJpdiI6IjFJVVVVL3plYXJOYm1KdjlQUWRMNXc9PSIsInZhbHVlIjoiSDh0V3h1NkVUOHYzTFo3REZBamJ3cHdvL2Uwa0tacmtQOGhSQUMxSVZpMEluSVZ3aERBVkhHcnA5cFFuclpHYTBRNUNkWW80RGpkTU1rajR3Smx5UXNPZ1N2V1lQcjhUampFZlI2eHNHV3hmdU5zclJHdzhQSUxaWUkxSDlUajcwYmVLYVZXai9Da0VCT3FpUWJmMklRPT0iLCJtYWMiOiI0OWQ5YTcwNjk1OGJhMGEyZTQ3NWZiYzE3ZTEzMGJjYTE3NmYzNDQxNzg0MDZlYzAwMDE0YzZiYzcxZWFiODNiIiwidGFnIjoiIn0=',
-            brandId: '17030543533245197234',
-            scv2Url: 'https://scv2.hw-staging.testingnow.me',
-            scv2PwaUrl: 'https://scv2-pwa.hw-staging.testingnow.me',
-            scv2BOUrl: 'https://scv2-bo-pwa.hw-staging.testingnow.me/graphql',
-            storeFrontUrl: 'https://catfootwear-id.myshopify.com/api/2024-01/graphql.json',
-            adminUrl: 'https://catfootwear-id.myshopify.com/admin/api/2024-01/graphql.json',
-            // scv2Key: 'eyJpdiI6IjBzRVNnL2JIVmV2UWh6WXVBVnJrS3c9PSIsInZhbHVlIjoiUG03SllFMWQ5RWNFbTc5ZHU3Y2s1N2F0VGxVdllCWnp6aDhvRGh2bzNacE54akwyTE5vRlFBNTdwTURURHNXNzNuSmJBSU82Z25ZdUVJU0VXRG5ReVNqWFBoYmZseGF5WjF6WVVMaDBQbzhZbmFLWldiNzdzRVowNWdWOGRuR2xJK2ZXZW9nbkRRdkJINXhtUWI3UTJRPT0iLCJtYWMiOiI1YjBlMTZhMWQ2MTFiOWI0NDI0YzMxZDhjMGMzYjExOTEwOTYwNjJmOGMxYTE4NWFkOWZlMGZhY2QwZDE4NWZhIiwidGFnIjoiIn0=',
-            // brandId: '17030461779788758060',
-            // scv2Url: 'https://scv2.testingnow.me',
-            // scv2PwaUrl: 'https://scv2-pwa.testingnow.me',
-            // scv2BOUrl: 'https://scv2-bo-pwa.testingnow.me/graphql',
-            // storeFrontUrl: 'https://catfootwear-id.myshopify.com/api/2024-01/graphql.json',
-            // adminUrl: 'https://catfootwear-id.myshopify.com/admin/api/2024-01/graphql.json',
-            };
-        </script>
-        <script src="{{ 'swift-checkout-1.0.6.js' | asset_url }}" defer="defer"></script>
-<!-- end custom code from scv2 -->
+
 {%- if has_mega_nav_pills -%}
   <link rel="stylesheet" href="{{ 'navigation-mega-pills.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
@@ -837,16 +800,16 @@
       "type": "image_picker",
       "id": "logo",
       "label": "Logo image"
-    },
+    }, 
     {
       "type": "range",
       "id": "logo_width",
       "min": 50,
-      "max": 300,
-      "step": 10,
+      "max": 170,
+      "step": 4,
       "unit": "px",
       "label": "Maximum logo width",
-      "default": 150
+      "default": 54
     },
     {
       "type": "checkbox",
