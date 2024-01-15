@@ -679,6 +679,7 @@
             <div class="special-menu">
               <ul>
                 {%- for block in section.blocks -%}
+                  {%- echo block -%}
                   {%- if block.type == "special_menu" -%}
                     <li>
                       <span><a href="">{{ block.menu_title_1 }}</a></span>
