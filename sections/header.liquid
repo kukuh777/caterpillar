@@ -37,7 +37,12 @@
   --nav-child-bg-color:  {{ section.settings.bg_color.rgb }};
   --nav-child-text-color: {{ section.settings.text_color.rgb }};
   --header-accent-color: {{ section.settings.accent_color.rgb }};
-  --search-bg-color: {{ section.settings.bg_color | color_mix: section.settings.text_color, 90 }};
+  /* --search-bg-color: {{ section.settings.bg_color | color_mix: section.settings.text_color, 90 }}; */
+  --search-bg-color: {{ section.settings.search_background_color }};
+  --search-select-color: {{ section.settings.search_select_color }};
+  --search-border-color: {{ section.settings.search_border_color }};
+  --search-placeholder-color: {{ section.settings.search_placeholder_color }};
+
   {% unless section.settings.logo %}
     --logo_type_scale: var(--body-font-size) * {{ section.settings.logo_type_scale }};
     --logo_font-size: calc((var(--logo_type_scale) / 1.5) * var(--fluid-1-5));
@@ -871,9 +876,15 @@
     },
     {
       "type": "color",
-      "id": "placeholder_color",
+      "id": "search_placeholder_color",
       "label": "Placeholder color",
       "default": "#E5E7EB"
+    },
+    {
+      "type": "color",
+      "id": "search_icon_color",
+      "label": "Icon color",
+      "default": "#374151"
     },
     {
       "type": "header",
