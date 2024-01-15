@@ -116,7 +116,7 @@
           "type": "newsletter",
           "settings": {
             "show_newsletter": true,
-            "heading": "Newsletter",
+            "heading": "JOIN THE CAT CREW",
             "text": "<p>Save 15% on your first footwear purchase when you join our email list.<\/p>",
             "details": "This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. CAT Footwear Privacy Policy",
             "collapse_mobile": true
