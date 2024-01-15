@@ -13,6 +13,7 @@
 
 .search__product-types {
   width: var(--product-types-width);
+  border: 1px solid var(--search-border-color);
 }
 .search__product-types .custom-select {
   height: 100%;
