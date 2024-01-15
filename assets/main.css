@@ -3530,7 +3530,7 @@ a.scrolling-banner__item:hover {
   border: 1px solid var(--search-border-color);
   border-radius: var(--input-lg-border-radius, var(--input-border-radius));
   background-color: var(--search-bg-color, rgba(var(--text-color)/0.08));
-  color: rgb(var(--text-color));
+  color: rgb(var(--search-placeholder-color));
   font-size: var(--body-font-size);
   line-height: 1em;
   text-transform: initial;
