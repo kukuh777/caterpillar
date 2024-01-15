@@ -115,8 +115,8 @@
         "newsletter_A9tndA": {
           "type": "newsletter",
           "settings": {
-            "heading": "Newsletter",
-            "text": "<p>Sign up for exclusive offers, original stories, events and more.<\/p>",
+            "heading": "Join the cat crew",
+            "text": "<p>Save 15% on your first footwear purchase when you join our email list.<\/p>",
             "collapse_mobile": true
           }
         }
