@@ -2782,6 +2782,10 @@ details-disclosure + details-disclosure .disclosure--row {
   transform: rotate(-45deg);
 }
 
+.special-menu span {
+  font-weight: 400;
+}
+
 .main-nav__item,
 .secondary-nav__item {
   color: currentColor;
