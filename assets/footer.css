@@ -61,6 +61,9 @@
 .footer-block__text {
   color: rgb(var( --desc-color));
 }
+.footer-block__text p {
+  margin: 0;
+}
 
 .footer-block__btns {
   margin-top: 1.5em;
