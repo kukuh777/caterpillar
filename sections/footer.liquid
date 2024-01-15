@@ -11,8 +11,13 @@
     --text-color: {{ section.settings.text_color.rgb }};
     --desc-color: {{ section.settings.desc_color.rgb }};
     --icon-color: {{ section.settings.heading_color.rgb }};
-    --bg-copyright-color: {{ section.settings.copyright_bg_color.rgb }};
-    --copyright-color: {{ section.settings.copyright_color.rgb }};
+    --bg-copyright-color: {{ section.settings.secondary_bg_color.rgb }};
+    --copyright-color: {{ section.settings.secondary_color.rgb }};
+    --newsletter-color: {{ section.settings.bg_color.rgb }};
+    --newsletter-bg-color: {{ section.settings.newsletter_bg_color.rgb }};
+    --newsletter-btn-color: {{ section.settings.heading_color.rgb }};
+    --newsletter-btn-bg-color: {{ section.settings.newsletter_btn_bg_color.rgb }};
+    /* --newsletter */
   }
 {%- endstyle -%}
 
@@ -419,6 +424,18 @@
       "id": "copyright_bg_color",
       "label": "Copyright Background color",
       "default": "#F9FAFB"
+    },
+    {
+      "type": "color",
+      "id": "newsletter_bg_color",
+      "label": "Newsletter Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "newsletter_bg_btn_color",
+      "label": "Newsletter Background Button color",
+      "default": "#FFCB00"
     },
     {
       "type": "color",
