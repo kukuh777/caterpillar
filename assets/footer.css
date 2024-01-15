@@ -32,9 +32,6 @@
 .footer .social {
   display: inline-flex;
 }
-.footer .social ul:nth-child(3) {
-
-}
 
 .footer__main > .footer-col:first-child .disclosure {
   border-top: 0;
@@ -42,6 +39,10 @@
 
 .footer-block + .footer-block {
   margin-top: calc(12 * var(--space-unit));
+}
+
+.footer-block {
+  text-align: center;
 }
 
 .footer-block__text {
@@ -210,9 +211,6 @@
   }
   .footer-block__social {
     margin-bottom: -6px;
-  }
-  .footer-block {
-    text-align: center;
   }
   .footer-col--not-collapsed + .footer-col--not-collapsed > .footer-block {
     padding-top: var(--row-gap);
