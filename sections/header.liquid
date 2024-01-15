@@ -690,7 +690,19 @@
                           alt_text: block.settings.menu_title_1
                         %}
                       </span>
-                      <span><a href="">{{ block.settings.menu_title_1 }}</a></span>
+                      <span><a href="{{ block.settings.menu_link_1 }}">{{ block.settings.menu_title_1 }}</a></span>
+                    </li>
+                    <li class="flex items-center gap-x-1">
+                      <span class="flex" style="max-width: {{ block.settings.icon_width | plus: 0 }}px;">
+                        {% render 'image',
+                          image: block.settings.menu_icon_2,
+                          src_width: block.settings.icon_width,
+                          srcset_2x: true,
+                          lazy_load: false,
+                          alt_text: block.settings.menu_title_2
+                        %}
+                      </span>
+                      <span><a href="{{ block.settings.menu_link_2 }}">{{ block.settings.menu_title_2 }}</a></span>
                     </li>
                   {%- endif -%}
                 {%- endfor -%}
