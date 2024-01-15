@@ -118,6 +118,7 @@
             "show_newsletter": true,
             "heading": "Newsletter",
             "text": "<p>Sign up for exclusive offers, original stories, events and more.<\/p>",
+            "details": "<p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. CAT Footwear Privacy Policy<\/p>",
             "collapse_mobile": true
           }
         }
@@ -136,15 +137,15 @@
         "show_copyright": "custom",
         "copyright_position": "justify-center",
         "custom_copyright": "CAT Footwear All Rights Reserved",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
         "secondary_menu": "",
         "bg_color": "#ffffff",
         "desc_color": "#4b5563",
         "heading_color": "#111827",
         "text_color": "#6b7280",
-        "copyright_bg_color": "#f9fafb",
-        "copyright_color": "#9ca3af"
+        "newsletter_bg_color": "#000000",
+        "newsletter_bg_btn_color": "#FFCB00"
       }
     }
   },
