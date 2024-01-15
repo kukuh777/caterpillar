@@ -959,7 +959,7 @@ address {
   background-color: rgba(var(--bg-color));
 }
 .bg-theme-bg-copyright{
-  background-color: rgba(var(--bg-copyright-color));
+  background-color: rgb(var(--bg-copyright-color));
 }
 .bg-success-bg{
   background-color: rgb(var(--success-bg-color));
