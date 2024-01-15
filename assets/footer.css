@@ -237,6 +237,9 @@
     margin-bottom: 0;
     padding-top: 0;
   }
+  .footer.footer-col--newsletter {
+    padding: 40px 16px;
+  }
   .footer-col--newsletter span {
     font-size: 10px;
   }
