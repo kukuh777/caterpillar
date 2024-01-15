@@ -4261,7 +4261,6 @@ label[data-swatch]::before {
 
 .header__logo {
   flex: 1;
-  padding-left: var(--gutter); 
 }
 
 .logo__h1 {
@@ -4357,6 +4356,7 @@ label[data-swatch]::before {
   }
   .header__logo {
     order: 0;
+    padding-left: var(--gutter); 
     /* padding-inline-start: 0; */
     padding-inline-end: calc(6 * var(--space-unit));
   }
