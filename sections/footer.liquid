@@ -20,8 +20,8 @@
   <a href="#" class="back-to-top text-sm block border-top font-bold text-center text-current p-6 border-bottom"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>{{ 'sections.footer.back_to_top' | t }}</a>
 {%- endif -%}
 
+<h1>test</h1>
 {%- if section.settings.show_newsletter -%}
-  <h1>test</h1>
   <div class="footer-col footer-col--newsletter{% if block.settings.collapse_mobile %} footer-col--collapsed{% else %} footer-col--not-collapsed{% endif %}" {{ block.shopify_attributes }}{% if settings.animations_enabled != "disabled" %} data-cc-animate data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s"{% endif %}>
     {%- if block.settings.collapse_mobile -%}
       <footer-menu>
