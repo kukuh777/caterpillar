@@ -29,39 +29,6 @@
   {%- case block.type -%}
     {%- when 'newsletter' -%}
         <div class="footer footer-col footer-col--newsletter" {{ block.shopify_attributes }}{% if settings.animations_enabled != "disabled" %} data-cc-animate data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s"{% endif %}>
-          {% comment %} {%- if block.settings.collapse_mobile -%}
-            <footer-menu>
-              <details class="footer-menu disclosure{% if is_first_disclosure %} footer-menu--first{% endif %}" open>
-                <summary tabindex="-1">
-                  <div class="flex justify-between items-center">
-                    <h2 class="disclosure__title font-body font-bold text-h6 regular-text">
-                      {{ block.settings.heading | escape }}
-                    </h2>
-                    <span class="disclosure__toggle">
-                      {%- if settings.disclosure_toggle == 'plus' -%}
-                        {% render 'icon-plus' %}
-                      {%- else -%}
-                        {% render 'icon-chevron-down' %}
-                      {%- endif -%}
-                    </span>
-                  </div>
-                </summary>
-                <div class="disclosure__panel has-motion">
-                  <div class="disclosure__content">
-                    {%- if block.settings.text != blank -%}
-                      {{ block.settings.text }}
-                    {%- endif -%}
-
-                    {% render 'newsletter-signup', id: 'footer-signup', arrow_button: true, tags: 'newsletter' %}
-                  </div>
-                </div>
-              </details>
-            </footer-menu>
-            {%- assign is_first_disclosure = false -%}
-          {%- else -%}
-          {%- endif -%} {% endcomment %}
-          
-
           <div class="footer-block">
             <h1 class="footer-block__heading font-body font-bold regular-text">
               {%- if block.settings.heading != blank -%}
@@ -251,9 +218,9 @@
       </div>
     {%- endif -%}
 
-    {% comment %} {%- if section.blocks.size > 0 or section.settings.enable_country_selector or section.settings.enable_language_selector or section.settings.show_payment_icons -%}
+    {%- if section.blocks.size > 0 or section.settings.enable_country_selector or section.settings.enable_language_selector or section.settings.show_payment_icons -%}
     <hr class="footer__hr"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
-    {% endif %} {% endcomment %}
+    {% endif %}
 
   </div>
   <div class="footer__base bg-theme-bg-copyright flex gap-x-theme gap-y-6 text-s {{ section.settings.copyright_position }}"{% if settings.animations_enabled != "disabled" %} data-cc-animate{% endif %}>
