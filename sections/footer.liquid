@@ -25,7 +25,7 @@
   {%- case block.type -%}
     {%- when 'newsletter' -%}
     <h1>test</h1>
-        {% comment %} <div class="footer-col footer-col--newsletter{% if block.settings.collapse_mobile %} footer-col--collapsed{% else %} footer-col--not-collapsed{% endif %}" {{ block.shopify_attributes }}{% if settings.animations_enabled != "disabled" %} data-cc-animate data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s"{% endif %}>
+        <div class="footer-col footer-col--newsletter{% if block.settings.collapse_mobile %} footer-col--collapsed{% else %} footer-col--not-collapsed{% endif %}" {{ block.shopify_attributes }}{% if settings.animations_enabled != "disabled" %} data-cc-animate data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s"{% endif %}>
           {%- if block.settings.collapse_mobile -%}
             <footer-menu>
               <details class="footer-menu disclosure{% if is_first_disclosure %} footer-menu--first{% endif %}" open>
@@ -70,7 +70,7 @@
               {% render 'newsletter-signup', id: 'footer-signup', arrow_button: true, tags: 'newsletter' %}
             </div>
           {%- endif -%}
-        </div> {% endcomment %}
+        </div> 
   {%- endcase -%}
 {%- endfor -%}
 
