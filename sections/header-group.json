@@ -55,7 +55,7 @@
       ],
       "settings": {
         "enable_sticky": true,
-        "mobile_menu_position": "burger-right",
+        "mobile_menu_position": "burger-left",
         "logo_text": "",
         "logo_type_scale": "2",
         "logo": "{{ shop.brand.logo }}",
