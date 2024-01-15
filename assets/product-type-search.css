@@ -14,6 +14,7 @@
 .search__product-types {
   width: var(--product-types-width);
   border: 1px solid var(--search-border-color);
+  border-radius: 0 4px 4px 0;
 }
 .search__product-types .custom-select {
   height: 100%;
@@ -24,6 +25,7 @@
   padding-right: var(--product-types-padding);
   padding-bottom: 0;
   border: 0;
+  border-radius: 4px 0 0 4px;
   /* border-right: 1px solid rgba(var(--bg-color)); */
   border-radius: var(--input-border-radius, 0) 0 0 var(--input-border-radius, 0);
   background-color: var(--search-bg-color, rgba(var(--text-color)/0.08));
