@@ -681,7 +681,16 @@
                 {%- for block in section.blocks -%}
                   {%- if block.type == "special_menu" -%}
                     <li>
-                      <span>{{ block.settings.menu_icon_1 }}<a href="">{{ block.settings.menu_title_1 }}</a></span>
+                      <span>
+                        {% render 'image',
+                          image: section.settings.menu_icon_1,
+                          src_width: 20px,
+                          srcset_2x: true,
+                          lazy_load: false,
+                          alt_text: alt_text
+                        %}
+                        <a href="">{{ block.settings.menu_title_1 }}</a>
+                      </span>
                     </li>
                   {%- endif -%}
                 {%- endfor -%}
