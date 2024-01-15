@@ -170,7 +170,7 @@ async function createCart(data) {
   }));
   
   const subtotalPrices = data.items_subtotal_price.toString().slice(0, -2);
-  console.log('subtotalPrices', parseInt(item.variant_id));
+  console.log('subtotalPrices', parseInt(subtotalPrices));
   
   const params = {
     query,
