@@ -111,15 +111,6 @@
             "menu": "my-account",
             "default_collapsible": ""
           }
-        },
-        "newsletter_A9tndA": {
-          "type": "newsletter",
-          "settings": {
-            "show_newsletter": false,
-            "heading": "Join the cat crew11",
-            "text": "<p>Save 15% on your first footwear purchase when you join our email list.1<\/p>",
-            "collapse_mobile": false
-          }
         }
       },
       "block_order": [
@@ -127,8 +118,7 @@
         "link-list-1",
         "link-list-2",
         "link_list_fEhWwQ",
-        "link_list_tUainj",
-        "newsletter_A9tndA"
+        "link_list_tUainj"
       ],
       "settings": {
         "show_back_to_top": true,
