@@ -62,20 +62,24 @@
           
 
           <div class="footer-block">
-            <h1 class="footer-block__heading font-body font-bold text-h6 regular-text">
+            <h1 class="footer-block__heading font-body font-bold regular-text">
               {%- if block.settings.heading != blank -%}
                 {{ block.settings.heading | escape }}
               {%- endif -%}
             </h1>
 
             {%- if block.settings.text != blank -%}
-              {{ block.settings.text }}
+              <div class="footer-block__heading">
+                {{ block.settings.text }}
+              </div>
             {%- endif -%}
 
             {% render 'newsletter-signup', id: 'footer-signup', arrow_button: true, tags: 'newsletter' %}
 
             {%- if block.settings.details != blank -%}
-              {{ block.settings.details }}
+              <div class="footer-block__details">
+                {{ block.settings.details }}
+              </div>
             {%- endif -%}
           </div>
         </div> 
