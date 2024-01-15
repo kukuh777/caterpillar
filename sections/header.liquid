@@ -680,7 +680,7 @@
               <ul>
                 {%- for block in section.blocks -%}
                   {%- if block.type == "special_menu" -%}
-                    <li>
+                    <li class="flex content-center gap-x-1">
                       <span class="flex" style="max-width: {{ block.settings.icon_width | plus: 0 }}px;">
                         {% render 'image',
                           image: block.settings.menu_icon_1,
@@ -690,7 +690,7 @@
                           alt_text: block.settings.menu_title_1
                         %}
                       </span>
-                      <a href="">{{ block.settings.menu_title_1 }}</a>
+                      <span><a href="">{{ block.settings.menu_title_1 }}</a></span>
                     </li>
                   {%- endif -%}
                 {%- endfor -%}
