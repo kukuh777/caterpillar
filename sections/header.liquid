@@ -681,16 +681,16 @@
                 {%- for block in section.blocks -%}
                   {%- if block.type == "special_menu" -%}
                     <li>
-                      <span>
+                      <span class="flex" style="max-width: {{ block.settings.icon_width | plus: 0 }}px;">
                         {% render 'image',
                           image: block.settings.menu_icon_1,
-                          src_width: 20,
+                          src_width: block.settings.icon_width,
                           srcset_2x: true,
                           lazy_load: false,
-                          alt_text: alt_text
+                          alt_text: block.settings.menu_title_1
                         %}
-                        <a href="">{{ block.settings.menu_title_1 }}</a>
                       </span>
+                      <a href="">{{ block.settings.menu_title_1 }}</a>
                     </li>
                   {%- endif -%}
                 {%- endfor -%}
@@ -1196,6 +1196,16 @@
           "type": "image_picker",
           "id": "menu_icon_2",
           "label": "Menu Icon 2"
+        },
+        {
+          "type": "range",
+          "id": "icon_width",
+          "min": 5,
+          "max": 50,
+          "step": 1,
+          "unit": "px",
+          "label": "Icon Width",
+          "default": 20
         }
       ]
     },
