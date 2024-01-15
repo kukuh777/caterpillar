@@ -221,9 +221,6 @@
     margin-bottom: 0;
     padding-top: 0;
   }
-  .footer .input-with-button {
-    max-width: 640px;
-  }
   .footer-col--newsletter span {
     font-size: 10px;
   }
@@ -267,6 +264,9 @@
   .footer {
     padding: calc(48 * var(--fluid-1-5)) 0 calc(16 * var(--space-unit));
     padding-bottom: 0;
+  }
+  .footer .input-with-button {
+    max-width: 640px;
   }
   .footer-col--newsletter span {
     font-size: 12px;
