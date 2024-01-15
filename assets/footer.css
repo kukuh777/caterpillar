@@ -41,10 +41,6 @@
   margin-top: calc(12 * var(--space-unit));
 }
 
-.footer-block {
-  text-align: center;
-}
-
 .footer-block__text {
   color: rgb(var( --desc-color));
 }
@@ -52,6 +48,10 @@
 .footer-block__btns,
 .footer-col--newsletter .input-with-button {
   margin-top: 1.5em;
+}
+
+.footer-col--newsletter .footer-block {
+  text-align: center;
 }
 
 .footer-block__social {
