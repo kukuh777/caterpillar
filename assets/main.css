@@ -4340,6 +4340,11 @@ label[data-swatch]::before {
     max-height: none;
     overflow: visible;
   }
+
+  .header__logo {
+    display: flex;
+    justify-content: center;
+  }
   .header__icon.hidden.md\:block {
     display: none;
   }
