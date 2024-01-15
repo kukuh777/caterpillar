@@ -285,6 +285,9 @@
     max-width: 640px;
     column-gap: 8px;
   }
+  .footer-col--newsletter {
+    padding: 40px;
+  }
   .footer-col--newsletter span {
     font-size: 12px;
   }
