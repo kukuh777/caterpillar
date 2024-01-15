@@ -165,7 +165,6 @@ async function createCart(data) {
   }`;
 
     const items = data.items.map((item) => ({
-      console.log('tes')
     qty: item.quantity,
     id: CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(`gid://shopify/ProductVariant/${item.variant_id}`)),
   }));
