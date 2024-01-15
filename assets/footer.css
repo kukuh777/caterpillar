@@ -221,6 +221,9 @@
     margin-bottom: 0;
     padding-top: 0;
   }
+  .footer .input-with-button {
+    max-width: 640px;
+  }
   .footer-col--newsletter span {
     font-size: 10px;
   }
