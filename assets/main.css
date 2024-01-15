@@ -4392,6 +4392,7 @@ label[data-swatch]::before {
   }
   .main-menu {
     order: 3;
+    border-top: 1px solid var(--search-border-color);
   }
   .header__grid--centered-logo .header__search {
     flex: 1 1 33%;
