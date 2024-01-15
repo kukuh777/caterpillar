@@ -231,7 +231,11 @@ mark {
   width: 100%;
   max-width: calc(var(--page-width, 1320px) + var(--gutter) * 2);
   margin: 0 auto;
-  /* padding: 0 var(--gutter); */
+  padding: 0 var(--gutter);
+}
+
+header.container {
+  padding: 0;
 }
 
 .page-width {
