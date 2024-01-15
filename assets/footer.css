@@ -211,6 +211,9 @@
   .footer-block__social {
     margin-bottom: -6px;
   }
+  .footer-block {
+    text-align: center;
+  }
   .footer-col--not-collapsed + .footer-col--not-collapsed > .footer-block {
     padding-top: var(--row-gap);
     border-top: 1px solid rgba(var(--text-color)/0.2);
