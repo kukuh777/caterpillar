@@ -17,7 +17,7 @@
 
 {%- liquid
   if class == blank
-    assign class = 'form'
+    assign class = 'form flex justify-center'
   endif
 
   if tags == blank
@@ -44,7 +44,7 @@
     </label>
 
     {%- unless combined == false -%}
-      <div class="input-with-button{% unless arrow_button %} input-with-button--md-up{% endunless %} flex justify-center">
+      <div class="input-with-button{% unless arrow_button %} input-with-button--md-up{% endunless %}">
     {%- endunless -%}
 
       <input type="email"
