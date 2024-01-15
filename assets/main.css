@@ -4345,6 +4345,9 @@ label[data-swatch]::before {
     display: flex;
     justify-content: center;
   }
+  .header__search {
+    padding: 0 var(--gutter);
+  }
   .header__icon.hidden.md\:block {
     display: none;
   }
