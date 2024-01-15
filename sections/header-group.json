@@ -37,6 +37,22 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "special_menu_xaqeAE": {
+          "type": "special_menu",
+          "settings": {
+            "menu_title_1": "Find a shop",
+            "menu_link_1": "shopify:\/\/collections",
+            "menu_icon_1": "shopify:\/\/shop_images\/location.svg",
+            "menu_title_2": "Today's Offers",
+            "menu_link_2": "shopify:\/\/products\/testdummy4-1",
+            "menu_icon_2": "shopify:\/\/shop_images\/sell.svg"
+          }
+        }
+      },
+      "block_order": [
+        "special_menu_xaqeAE"
+      ],
       "settings": {
         "enable_sticky": true,
         "mobile_menu_position": "burger-right",
@@ -49,6 +65,11 @@
         "enable_search": true,
         "minimise_search_mobile": false,
         "minimise_search_desktop": false,
+        "search_select_color": "#1F2937",
+        "search_border_color": "#E5E7EB",
+        "search_background_color": "#F3F4F6",
+        "search_placeholder_color": "#9CA3AF",
+        "search_icon_color": "#374151",
         "menu": "main-menu",
         "menu_center": false,
         "repeat_links": true,
