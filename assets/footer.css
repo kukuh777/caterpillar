@@ -54,8 +54,7 @@
   color: rgb(var( --desc-color));
 }
 
-.footer-block__btns,
-.footer-col--newsletter .input-with-button {
+.footer-block__btns {
   margin-top: 1.5em;
 }
 
