@@ -4354,7 +4354,7 @@ label[data-swatch]::before {
   }
   .header__logo {
     order: 0;
-    padding-inline-start: 0;
+    /* padding-inline-start: 0; */
     padding-inline-end: calc(6 * var(--space-unit));
   }
   .header__search {
