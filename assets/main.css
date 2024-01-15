@@ -937,6 +937,9 @@ address {
 .gap-x-1{
   column-gap: calc(1 * var(--space-unit));
 }
+.gap-x-4{
+  column-gap: calc(4 * var(--space-unit));
+}
 .gap-x-6{
   column-gap: calc(6 * var(--space-unit));
 }
