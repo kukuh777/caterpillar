@@ -3078,6 +3078,9 @@ details-disclosure + details-disclosure .disclosure--row {
   .main-menu .localization {
     display: none;
   }
+  .main-menu__content {
+    height: 44px;
+  }
   .main-nav {
     flex-wrap: wrap;
   }
