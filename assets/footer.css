@@ -50,8 +50,13 @@
   margin-top: 1.5em;
 }
 
+.footer-col--newsletter {
+  background-color: rgb(var(--newsletter-bg-color));
+}
+
 .footer-col--newsletter .footer-block {
   text-align: center;
+  background-color: rgb(var(--newsletter-color));
 }
 
 .footer-col--newsletter h1 {
@@ -60,6 +65,10 @@
   line-height: 32px;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+
+.footer-col--newsletter span {
+  color: rgb(var(--newsletter-secondary-color));
 }
 
 .footer-block__social {
