@@ -221,7 +221,7 @@ mark {
 
 :root {
   --column-gap: var(--grid-column-gap);
-  --gutter: var(--gutter-sm, 20px);
+  --gutter: var(--gutter-sm, 16px);
   --row-gap: calc(10 * var(--space-unit));
   --space-unit: 0.4rem;
   --viewport-width: calc(100vw - var(--scrollbar-width, 0));
@@ -265,7 +265,7 @@ mark {
 @media (min-width: 600px) {
   :root {
     --column-gap: calc(var(--grid-column-gap) * 1.6);
-    --gutter: var(--gutter-md, 32px);
+    --gutter: var(--gutter-md, 40px);
   }
 }
 @media (min-width: 1280px) {
