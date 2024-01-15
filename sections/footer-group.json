@@ -118,7 +118,7 @@
             "show_newsletter": true,
             "heading": "Newsletter",
             "text": "<p>Save 15% on your first footwear purchase when you join our email list.<\/p>",
-            "details": "<p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. CAT Footwear Privacy Policy<\/p>",
+            "details": "This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. CAT Footwear Privacy Policy",
             "collapse_mobile": true
           }
         }
@@ -144,7 +144,9 @@
         "desc_color": "#4b5563",
         "heading_color": "#111827",
         "text_color": "#6b7280",
-        "newsletter_bg_color": "#000000"
+        "newsletter_bg_color": "#000000",
+        "secondary_bg_color": "#F9FAFB",
+        "secondary_color": "#9CA3AF"
       }
     }
   },
