@@ -19,29 +19,11 @@
 -%}
 
 <ul class="social inline-flex flex-wrap{{ class }}">
-  {%- if settings.social_instagram_url != blank -%}
-    <li>
-      <a class="social__link flex items-center justify-center" href="{{ settings.social_instagram_url }}" target="_blank" rel="noopener" title="{{- 'general.social.follow_shop' | t: shop_name: shop.name, social_platform: 'Instagram' -}}">
-        {%- render 'icon-instagram' -%}
-        <span class="visually-hidden">Instagram</span>
-      </a>
-    </li>
-  {%- endif -%}
-
   {%- if settings.social_facebook_url != blank -%}
     <li>
       <a class="social__link flex items-center justify-center" href="{{ settings.social_facebook_url }}" target="_blank" rel="noopener" title="{{- 'general.social.follow_shop' | t: shop_name: shop.name, social_platform: 'Facebook' -}}">
         {%- render 'icon-facebook' -%}
         <span class="visually-hidden">Facebook</span>
-      </a>
-    </li>
-  {%- endif -%}
-  
-  {%- if settings.social_twitter_url != blank -%}
-    <li>
-      <a class="social__link flex items-center justify-center" href="{{ settings.social_twitter_url }}" target="_blank" rel="noopener" title="{{- 'general.social.follow_shop' | t: shop_name: shop.name, social_platform: 'Twitter' -}}">
-        {%- render 'icon-twitter' -%}
-        <span class="visually-hidden">Twitter</span>
       </a>
     </li>
   {%- endif -%}
@@ -51,6 +33,15 @@
       <a class="social__link flex items-center justify-center" href="{{ settings.social_youtube_url }}" target="_blank" rel="noopener" title="{{- 'general.social.follow_shop' | t: shop_name: shop.name, social_platform: 'YouTube' -}}">
         {%- render 'icon-youtube' -%}
         <span class="visually-hidden">YouTube</span>
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_instagram_url != blank -%}
+    <li>
+      <a class="social__link flex items-center justify-center" href="{{ settings.social_instagram_url }}" target="_blank" rel="noopener" title="{{- 'general.social.follow_shop' | t: shop_name: shop.name, social_platform: 'Instagram' -}}">
+        {%- render 'icon-instagram' -%}
+        <span class="visually-hidden">Instagram</span>
       </a>
     </li>
   {%- endif -%}
@@ -87,6 +78,15 @@
       <a class="social__link flex items-center justify-center" href="{{ settings.social_pinterest_url }}" target="_blank" rel="noopener" title="{{- 'general.social.follow_shop' | t: shop_name: shop.name, social_platform: 'Pinterest' -}}">
         {%- render 'icon-pinterest' -%}
         <span class="visually-hidden">Pinterest</span>
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_twitter_url != blank -%}
+    <li>
+      <a class="social__link flex items-center justify-center" href="{{ settings.social_twitter_url }}" target="_blank" rel="noopener" title="{{- 'general.social.follow_shop' | t: shop_name: shop.name, social_platform: 'Twitter' -}}">
+        {%- render 'icon-twitter' -%}
+        <span class="visually-hidden">Twitter</span>
       </a>
     </li>
   {%- endif -%}
