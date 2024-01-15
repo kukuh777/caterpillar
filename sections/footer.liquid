@@ -21,7 +21,7 @@
 {%- endif -%}
 
 {%- for block in section.blocks -%}
-  {%- echo block | json -%}
+  {%- echo block -%}
   {%- case block.type -%}
     {%- when 'newsletter' -%}
       <h1>test</h1>
