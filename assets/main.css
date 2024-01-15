@@ -1876,7 +1876,7 @@ select {
   margin-inline-end: calc((var(--input-border-radius, 0px) + var(--btn-border-radius, 0px)) * -1);
   padding-inline-end: 0;
   border: 0;
-  background-color: transparent;
+  /* background-color: transparent; */
   box-shadow: none;
 }
 .input-with-button > .btn {
