@@ -115,9 +115,10 @@
         "newsletter_A9tndA": {
           "type": "newsletter",
           "settings": {
-            "heading": "Join the cat crew",
-            "text": "<p>Save 15% on your first footwear purchase when you join our email list.<\/p>",
-            "collapse_mobile": true
+            "show_newsletter": false,
+            "heading": "Join the cat crew11",
+            "text": "<p>Save 15% on your first footwear purchase when you join our email list.1<\/p>",
+            "collapse_mobile": false
           }
         }
       },
