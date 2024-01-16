@@ -3070,6 +3070,15 @@ details-disclosure + details-disclosure .disclosure--row {
     margin-inline-start: 16px;
   }
 }
+.special-menu {
+  position: absolute;
+  bottom: 0;
+  padding: 24px 64px 24px 16px;
+  width: 100%;
+}
+.special-menu ul {
+  justify-content: center;
+}
 @media (min-width: 769px) {
   body:not(.tab-used) .main-nav__item--toggle {
     outline: none !important;
