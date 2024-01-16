@@ -139,6 +139,25 @@
             {% render 'icon-customer' %}
             <span class="visually-hidden">{{ 'sections.header.account' | t }}</span>
           </a>
+          {% if customer and template.name == "account" %}
+            <li>
+              <a class="w-full no-underline hover:underline capitalize text-black" href="/account/logout">Sign out</a>
+            </li>
+          {% elsif customer %}
+            <li>
+              <a class="w-full no-underline hover:underline capitalize text-black" href="/account">My Account</a>
+            </li>
+            <li>
+              <a class="w-full no-underline hover:underline capitalize text-black" href="/account/logout">Sign out</a>
+            </li>
+          {% else %}
+            <li>
+              <a class="w-full no-underline hover:underline capitalize text-black" href="/account">Sign in</a>
+            </li>
+            <li>
+              <a class="w-full no-underline hover:underline capitalize text-black" href="/account/register">Sign up</a>
+            </li>
+          {% endif %}
         {%- else -%}
           <a class="header__icon text-current" href="{{ routes.account_login_url }}">
             {% render 'icon-customer' %}
